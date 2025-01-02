@@ -31,7 +31,7 @@ import org.json.JSONObject;
  * callback dispatcher, used to invoke Dart callbacks while backgrounded.
  */
 public class FlutterBackgroundExecutor implements MethodCallHandler {
-  private static final String TAG = "FlutterBackgroundExecutor";
+  private static final String TAG = "FlutterBGExecutor";
   private static final String CALLBACK_HANDLE_KEY = "callback_handle";
 
   /**

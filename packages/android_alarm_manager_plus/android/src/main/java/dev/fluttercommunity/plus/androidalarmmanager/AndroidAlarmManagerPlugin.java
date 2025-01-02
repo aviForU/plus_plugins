@@ -31,7 +31,7 @@ import org.json.JSONObject;
  *   <li>The Android side of this plugin spins up a background {@link FlutterNativeView}, which
  *       includes a background Dart isolate.
  *   <li>The Android side of this plugin instructs the new background Dart isolate to execute the
- *       callback that was received in the "AlarmService.start" message.
+ *       callback that was received in the "AlarmService.start" message. issgit
  *   <li>The Dart side of this plugin, running within the new background isolate, executes the
  *       designated callback. This callback prepares the background isolate to then execute any
  *       given Dart callback from that point forward. Thus, at this moment the plugin is fully
@@ -41,7 +41,7 @@ import org.json.JSONObject;
  * </ol>
  */
 public class AndroidAlarmManagerPlugin implements FlutterPlugin, MethodCallHandler {
-  private static final String TAG = "AndroidAlarmManagerPlugin";
+  private static final String TAG = "AndroidAlarmMgrPlugin";
   private Context context;
   private final Object initializationLock = new Object();
   private MethodChannel alarmManagerPluginChannel;
